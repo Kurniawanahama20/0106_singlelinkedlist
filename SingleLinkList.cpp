@@ -94,4 +94,13 @@ public:
         delete current;
         return true;
     }
+
+    void traverse()
+    {
+        if (listEmpty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+    }
 };
