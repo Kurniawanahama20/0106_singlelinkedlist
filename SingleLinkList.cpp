@@ -2,21 +2,40 @@
 #include <string>
 using namespace std;
 
-class node
+class Node
 {
 public:
     int noMhs;
-    node *next;
+    Node *next;
 
 };
 
 class Linkedlist
 {
-    node *START;
+    Node *START;
 
 public:
     Linkedlist()
     {
-        
+      START = NULL;  
+    }
+
+    void addNote()
+    {
+        int nim;
+        cout << "\nMasukkan Nomor Mahasiswa : ";
+        cin >> nim;
+
+        Node *nodeBaru = new Node;
+        nodeBaru->noMhs = nim;
+
+        if (START == NULL || nim <= START->noMhs)
+        (
+            if (START != NULL && nim == START->noMhs)
+            {
+               cout << "\nDuplikasi noMhs tidak diijinkan\n";
+               return; 
+            }
+        )
     }
 }
